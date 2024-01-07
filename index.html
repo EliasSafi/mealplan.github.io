@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Weekly Diet Plan</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+</style>
+</head>
+<body>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+          document.querySelectorAll('td').forEach(cell => {
+            cell.addEventListener('click', function() {
+              this.style.backgroundColor = 'green';
+            });
+            cell.addEventListener('contextmenu', function(e) {
+              e.preventDefault();
+              this.style.backgroundColor = 'red';
+            });
+            cell.addEventListener('dblclick', function() {
+              this.style.backgroundColor = '';
+            });
+          });
+        });
+      </script>
+      
+<h2>Weekly Diet Plan</h2>
+
+<table>
+  <tr>
+    <th>Day</th>
+    <th>Breakfast</th>
+    <th>Mid-Morning Snack</th>
+    <th>Lunch</th>
+    <th>Afternoon Snack (Pre-Workout)</th>
+    <th>Dinner (Post-Workout)</th>
+    <th>Evening Snack</th>
+  </tr>
+  <tr>
+    <td>Monday</td>
+    <td>Omelette with veggies & whole-grain toast</td>
+    <td>Greek yogurt & mixed nuts</td>
+    <td>Grilled chicken, quinoa, mixed veggies</td>
+    <td>Apple & almonds</td>
+    <td>Lean steak, sweet potato, steamed broccoli</td>
+    <td>Cottage cheese & cucumber</td>
+  </tr>
+  <tr>
+    <td>Tuesday</td>
+    <td>Protein smoothie with banana & yogurt</td>
+    <td>Handful of berries</td>
+    <td>Tuna salad, whole-grain bread</td>
+    <td>Banana</td>
+    <td>Grilled fish, brown rice, asparagus</td>
+    <td>Carrot sticks</td>
+  </tr>
+  <tr>
+    <td>Wednesday</td>
+    <td>Scrambled eggs, spinach, whole-grain toast</td>
+    <td>Hummus & veggie sticks</td>
+    <td>Turkey breast, farro, green beans</td>
+    <td>A piece of fruit</td>
+    <td>Chicken stir-fry with veggies & quinoa</td>
+    <td>Greek yogurt</td>
+  </tr>
+  <tr>
+    <td>Thursday</td>
+    <td>Greek yogurt with nuts and honey</td>
+    <td>A piece of fruit</td>
+    <td>Beef stir-fry, mixed veggies, brown rice</td>
+    <td>Mixed nuts</td>
+    <td>Grilled salmon, mixed salad</td>
+    <td>Cottage cheese & pineapple</td>
+  </tr>
+  <tr>
+    <td>Friday</td>
+    <td>Whole-grain toast with avocado</td>
+    <td>Fresh fruit smoothie</td>
+    <td>Chicken Caesar salad</td>
+    <td>Apple & peanut butter</td>
+    <td>Shrimp, whole-wheat pasta, grilled zucchini</td>
+    <td>A few slices of cheese</td>
+  </tr>
+  <tr>
+    <td>Saturday</td>
+    <td>Pancakes with berries and Greek yogurt</td>
+    <td>A piece of fruit</td>
+    <td>Grilled fish tacos, salsa, guacamole</td>
+    <td>Yogurt & granola</td>
+    <td>BBQ chicken, corn on the cob, mixed greens</td>
+    <td>Dark chocolate & almonds</td>
+  </tr>
+  <tr>
+    <td>Sunday</td>
+    <td>Protein waffles made with egg & banana</td>
+    <td>Cottage cheese & fruit</td>
+    <td>Roast beef, sweet potato, steamed carrots</td>
+    <td>Trail mix</td>
+    <td>Baked cod, wild rice, steamed spinach</td>
+    <td>A small bowl of mixed fruit</td>
+  </tr>
+</table>
+
+</body>
+</html>

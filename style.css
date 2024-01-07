@@ -1,0 +1,33 @@
+/* Style for the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+  }
+  
+  /* Style for table headers */
+  th {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  /* Style for table data */
+  td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    transition: background-color 0.3s ease; /* Transition for background color change on hover */
+  }
+  
+  /* Hover effect for table rows */
+  tr:hover {
+    background-color: #eaeaea;
+  }
+  
+  /* Hover effect for table data */
+  td:hover {
+    background-color: #d1d1d1;
+    cursor: pointer; /* Changes the cursor to indicate interactivity */
+  }
+  
